@@ -1,7 +1,18 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import localFont from 'next/font/local'
+import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
-const inter = Inter({ subsets: ['latin'] })
+const samim = localFont({
+  src: [
+    {
+      path: './Samim.ttf',
+      weight: '400',
+      style: 'normal'
+    },
+  ],
+  variable: '--font-samim'
+})
 
 export const metadata = {
   title: 'Farhan Blog',
@@ -10,8 +21,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fa" dir="rtl">
-      <body className={inter.className}>{children}</body>
+    <html lang="fa" dir="rtl" className={samim.className}>
+      <body>
+        <div className="container">
+          <div className="wrapper">
+            <Navbar/>
+            {children}
+            <Footer/>
+          </div>
+        </div>
+      </body>
     </html>
   )
 }
