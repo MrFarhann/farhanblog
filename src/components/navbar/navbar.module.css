@@ -21,7 +21,7 @@
     position: relative;
 }
 
-.left{
+.logo{
     font-size: 36px;
     color: var(--textColor);
 }
@@ -51,38 +51,38 @@
 
 .create{
     color: var(--softTextColor);
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
 }
 
 .login{
-    outline: none;
-    border: none;
-    padding: 6px 18px;
-    font-size: 17px;
-    background-color: #10c142;
+    padding: 6px 12px;
+    background-color: #00af00;
     color: white;
-    border-radius: 8px;
-    cursor: pointer;
-    font-family: var(--samim);
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 .register{
-    text-decoration: none;
-    font-size: 18px;
+    padding: 6px 12px;
+    background-color: #00af00;
+    color: white;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
 }
 
 .dropdown{
-    position: absolute;
+    width: 34%;
+    position: fixed;
     background-color: var(--softBg);
-    padding: 1rem;
+    padding: 6px;
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     align-items: center;
-    gap: 1.25rem;
-    top: 3rem;
-    right: -2.3rem;
+    gap: 16px;
     border-radius: 8px;
+    top: 10px;
+    right: 10px;
 }
 
 .dropdown > :nth-child(2){
@@ -97,4 +97,25 @@
     position: absolute;
     top: 0.3rem;
     right: 0.3rem;
+}
+
+.profile{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 10px;
+}
+.username{
+    font-size: 20px;
+    color: var(--textColor);
+}
+
+.menu{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    .logo{
+        font-size: 30px;
+    }
 }

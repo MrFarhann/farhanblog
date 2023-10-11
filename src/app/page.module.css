@@ -5,21 +5,40 @@
 
 .wrapper{
     height: 100%;
-    width: 85%;
-    margin: 0 auto;
-    margin-top: 2.5rem;
+    width: 98%;
+    margin: 52px auto;
     display: flex;
-    flex-wrap: wrap;
-    gap: 7.5rem;
-}
-
-.container > h2{
-    text-align: center;
-    color: #333;
-    margin-top: 1.5rem;
-    font-size: 32px;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
 }
 
 .title{
-    font-family: '__samim_aac9b3', '__samim_Fallback_aac9b3', sans-serif;
+    text-align: center;
+    color: var(--textColor);
+    margin-top: 1.5rem;
+    font-size: 28px;
+}
+
+
+@media screen and (max-width: 992px){
+    .wrapper{
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .wrapper{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .wrapper{
+        width: 100%;
+        justify-content: center;
+    }
 }

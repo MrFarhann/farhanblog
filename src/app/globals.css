@@ -47,8 +47,10 @@ a {
 }
 
 .wrapper {
-  max-width: 94%;
+  max-width: 99%;
   margin: auto;
-  padding: 0 30px;
+  padding: 0 20px;
 }
+
+
 
