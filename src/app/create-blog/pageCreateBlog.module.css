@@ -1,0 +1,115 @@
+.container{
+    margin: 30px 0;
+    width: 100%;
+}
+
+.wrapper{
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper > h2{
+    font-size: 32px;
+    color: var(--textColor);
+    letter-spacing: 1px;
+}
+
+.wrapper > form{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.wrapper > form > input{
+    outline: none;
+    border: none;
+    padding: 0.4rem;
+    resize: none;
+    font-family: var(--samim);
+    color: var(--textColor);
+    font-size: 28px;
+}
+
+.selectContainer{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.selectContainer > span{
+    color: var(--textColor);
+    font-size: 20px;
+}
+
+.selectContainer > select{
+    outline: none;
+    padding: 0.4rem;
+    resize: none;
+    font-size: 18px;
+    width: 180px;
+    background-color: var(--softBg) !important;
+    color: var(--textColor);
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: var(--samim);
+}
+
+.wrapper > form > label{
+    padding: 8px;
+    width: 178px;
+    border: 1px solid var(--textColor);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    font-size: 18px;
+    color: var(--textColor);
+    cursor: pointer;
+}
+
+.createBlog{
+    width: 178px;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    font-size: 18px;
+    font-family: var(--samim);
+    border-radius: 12px;
+    background-color: #22ab22;
+    color: #efefef;
+    cursor: pointer;
+    transition: all 300ms linear;
+}
+
+.createBlog:hover{
+    background-color: #1c8f1c;
+}
+
+.accessDenied{
+    padding: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.accessDenied > div{
+    padding: 20px;
+    width: 380px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
+}

@@ -1,7 +1,8 @@
-import './globals.css'
-import localFont from 'next/font/local'
+import './globals.css';
+import localFont from 'next/font/local';
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import Provider from "@/SessionProvider";
 
 const samim = localFont({
   src: [
@@ -21,15 +22,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fa" dir="rtl" className={samim.className}>
-      <body>
-        <div className="container">
-          <div className="wrapper">
-            <Navbar/>
-            {children}
-            <Footer/>
+    <html lang="fa" dir="rtl">
+      <body className={samim.className}>
+        <Provider>
+          <div className="container">
+            <div className="wrapper">
+              <Navbar/>
+              {children}
+              <Footer/>
+            </div>
           </div>
-        </div>
+        </Provider>
       </body>
     </html>
   )
